@@ -1,12 +1,28 @@
 /* GENERALES */
 
+.clearfix {
+    float: none;
+    clear: both;
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body {
+    color: #666666;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: 'Roboto', arial;
+    line-height: 1.5em;
     background-color: #dfe2f8;
+    background-image: url(https://assets.tumblr.com/images/x.gif?v=1);
+    background-repeat: repeat;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
 }
 
 
@@ -17,35 +33,53 @@ body {
     list-style: none;
     text-decoration: none;
     width: 100%;
-    margin: 2px;
-    padding: 2px;
     display: block;
-    height: 38px;
+    height: 50px;
 }
 
 #periodico {
     display: block;
     box-shadow: 1px -1px 0 0 #eaeaea, inset 1px -1px 0 0 #eaeaea;
-    width: 3%;
-    text-align: center;
+    width: 4%;
     float: left;
-    height: 40px;
-    margin-left: 50px;
-    margin-right: 10px;
+    height: 50px;
+    margin-left: 80px;
+    margin-right: 20px;
+    min-height: 57px;
+    text-align: center;
+    line-height: 53px;
 }
 
 #periodico span {
     text-align: center;
-    height: 40px;
+    height: 50px;
     margin-top: 10px;
 }
 
-#carrusel ul {
-    text-decoration: none;
+#social {
+    width: 50%;
+    height: 50px;
+    color: #666666;
+    font-size: 14px;
+}
+
+#social ul {
     list-style: none;
-    margin-left: 10px;
-    width: 40%;
-    border-right: 1px solid black;
+    text-decoration: none;
+    margin: 0px auto;
+    width: 90%;
+}
+
+#social ul li {
+    line-height: 40px;
     float: left;
-    max-height: 40px;
+    transition: all 300ms;
+}
+
+#social ul li a {
+    display: block;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: green;
+    text-decoration: none;
 }
